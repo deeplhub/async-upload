@@ -1,0 +1,17 @@
+server:
+  port: 7001
+
+spring:
+  profiles:
+    active: local
+  application:
+    name: async-upload
+  servlet:
+    multipart:
+      max-file-size: 1GB
+      max-request-size: 1GB
+  thymeleaf:
+    cache: false
+    encoding: UTF-8
+    prefix: classpath:/templates/
+    suffix: .html
